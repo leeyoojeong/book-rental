@@ -31,7 +31,8 @@ exports.createUser = async (req, res, next) => {
   const conn = await connection.getConnection();
   await conn.beginTransaction();
 
-  //contact_user 테이블에 인서트
+  //contact_user 테이블에 인서트하기
+
   try {
     [result] = await conn.query(query, data);
     user_id = result.insertId;
