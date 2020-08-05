@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 
 const connection = require("../db/mysql_connection");
 
-//@desc      회원가입
+//@desc      회원가입하기
 //@route     POST/api/v1/users
 //@request email, passwd
 //@response success
